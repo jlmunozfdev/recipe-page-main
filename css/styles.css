@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+/* Variables */
+:root {
+--White: hsl(0, 0%, 100%);
+--Stone_100: hsl(30, 54%, 90%);
+--Stone_150: hsl(30, 18%, 87%);
+--Stone_600: hsl(30, 10%, 34%);
+--Stone_900: hsl(24, 5%, 18%);
+
+--Brown_800: hsl(14, 45%, 36%);
+
+--Rose_800: hsl(332, 51%, 32%);
+--Rose_50: hsl(330, 100%, 98%);
+
+--font--title:  "Young Serif", serif;
+--font--paragraph: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header-text {
+    padding: 1rem 4rem;
+}
+
+.header-text > .text-title {
+    font-family: var(--font--title);
+    font-size: 2.5rem;
+}
+
+.header-text > .text-paragraph {
+    font-family: var(--font--paragraph);
+}
+
+.header-preparation {
+    background: var(--Rose_50);
+    margin: 1rem 4rem;
+    border-radius: 12px;
+}
+
+.preparation-title {
+    font-family: var(--font--paragraph);
+    color: var(--Rose_800);
+}
+
+.preparation-list {
+    font-family: var(--font--paragraph);
+}
+
+.preparation-list > li {
+    padding: 0.5rem 1rem;
+}
+
+.preparation-list > li > span {
+    font-weight: bold;
+}
+
+.header-ingredients {
+    padding: 1rem 4rem;
+}
+
+.ingredients-title {
+    font-family: var(--font--title);
+    font-size: 1.5rem;
+    color: var(--Brown_800);
+}
+
+.ingredients-list {
+    font-family: var(--font--paragraph);
+}
+
+.ingredients-list > li{
+    padding: 0.5rem 1rem;
+}
+
+.section-line {
+    padding-inline: 4rem;
+}
+
+.section-line > hr {
+    color: var(--Brown_800);
+}
+
+.section-instructions {
+    padding: 1rem 4rem;
+}
+
+.instructions-title {
+    font-family: var(--font--title);
+    font-size: 1.5rem;
+    color: var(--Brown_800);
+}
+
+.instructions-list {
+    font-family: var(--font--paragraph);
+    color: var(--Stone_600);
+}
+
+.instructions-list > li {
+    padding-top: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 1rem;
+    color: var(--Brown_800);
+    font-weight: bold;
+}
+
+.list-bold{
+    font-weight: bold;
+}
+
+li > span {
+    color: var(--Stone_900);
+    font-weight: normal;
+}
+
+.section-nutrition {
+    padding: 1rem 4.2rem;
+}
+
+.nutrition-title {
+    font-family: var(--font--title);
+    font-size: 1.5rem;
+    color: var(--Brown_800);
+}
+
+.nutrition-paragraph {
+    font-family: var(--font--paragraph);
+}
+
+.nutrition-table {
+    font-family: var(--font--paragraph);
+}
+
+.nutrition-table > thead > tr > td, .nutrition-table > tbody > tr > td  {
+    color: var(--Stone_900);
+    padding-left: 2rem;
+}
+
+.nutrition-table > thead > tr > th, .nutrition-table > tbody > tr > th  {
+    color: var(--Brown_800);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: var(--Rose_800);
+    gap: 5px;
+    color: white;
+    width: 100%;
+}
+
+footer > a {
+    font-family: var(--font--paragraph);
+    text-decoration: none;
+    color: chartreuse;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background: var(--Stone_100);
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem;
+        background: var(--White);
+        padding: 30px;
+        width: 550px;
+        border-radius: 15px;
+    }
+
+    .figure-img {
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .header-text {
+        padding: 0;
+    }
+
+    .header-text > .text-title {
+        font-family: var(--font--title);
+        font-size: 2rem;
+    }
+
+    .header-text > .text-paragraph {
+        font-size: 0.75rem;
+    }
+
+    .header-preparation {
+        background: var(--Rose_50);
+        margin-block: 2rem;
+        margin-inline: 0;
+        padding: 0;
+    }
+    
+    .preparation-title {
+        font-family: var(--font--paragraph);
+        color: var(--Rose_800);
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+       
+    .preparation-list > li {
+        font-size: 0.7rem;
+    }
+    
+    .preparation-list > li > span {
+        font-size: 0.9rem;
+    }
+    
+    .header-ingredients {
+        padding: 0;
+    }
+    
+    .ingredients-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .ingredients-list > li{
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Section Instructions */
+    .section-instructions {
+        padding: 0;
+    }
+    
+    .instructions-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+
+    .instructions-list > li {
+        font-size: 0.75rem;
+    }
+    
+    .list-bold{
+        font-size: 0.75rem;
+    }
+    
+    li > span {
+        font-size: 0.70rem;
+    }
+
+    /* Section Nutrition */
+    .section-nutrition {
+        padding: 0;
+    }
+    
+    .nutrition-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .nutrition-paragraph {
+        font-size: 0.8rem;
+    }
+    
+    .nutrition-table > thead > tr > td, .nutrition-table > tbody > tr > td  {
+        font-size: 0.75rem;
+    }
+    
+    .nutrition-table > thead > tr > th, .nutrition-table > tbody > tr > th  {
+        font-size: 0.75rem;
+    }
+}
+
